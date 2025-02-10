@@ -13,8 +13,8 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ weather } ) => {
   return (
     <div className="w-[360px] h-[311px] m-auto mt-[-74px] pl-[30px] bg-white shadow-[0px_5px_15px_rgba(70,69,69,0.25)] rounded-[10px]">
       <div>
-        <div className="flex gap-5 pt-[30px]">
-          <h3 className="w-[130px] h-[33px] font-[Rubik] font-medium text-[28px] text-black leading-[33.18px]">
+        <div className="flex gap-2.5 pt-[30px]">
+          <h3 className="w-[147px] h-[33px] font-[Rubik] font-medium text-[28px] text-black leading-[33.18px]">
             {weather?.name}
           </h3>
           <div className="w-[27px] h-[18px] rounded-[6px] bg-[#E5464F] flex items-center justify-center">
