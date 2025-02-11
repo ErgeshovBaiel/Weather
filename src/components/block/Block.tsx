@@ -3,6 +3,8 @@ import { weatherService } from "../../api/service/weatherService";
 import WeatherCard from "../../components/weather-card/WeatherCard";
 import { Weather } from "../../types/index";
 import Header from "../../components/header/Header";
+import Search from "../search/Search";
+import Footer from "../footer/Footer";
 
 
 const Block = () => {
@@ -29,7 +31,9 @@ const Block = () => {
     <div className="w-[980px] h-[687px] m-auto rounded-[10px]
       bg-white shadow-[0px_5px_15px_rgba(70,69,69,0.25)] mt-[100px] text">
       <Header />
+      <Search onSearch={getWeather} />
       <WeatherCard weather={data} />
+      <Footer />
     </div>
   );
 };
