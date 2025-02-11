@@ -6,6 +6,7 @@ type WeatherCardProps = {
 }
 
 const WeatherCard: React.FC<WeatherCardProps> = ({ weather } ) => { 
+  
   const iconUrl = weather?.weather[0].icon 
     ? `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`
     : "";

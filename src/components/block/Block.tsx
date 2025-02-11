@@ -9,10 +9,10 @@ import Footer from "../footer/Footer";
 
 const Block = () => {
   const [data, setData] = useState<Weather | undefined>();
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   const getWeather = (cityName: string) => {
-    setLoading(true);
+    setLoading(false);
     weatherService
       .getWeather(cityName)
       .then(setData)
